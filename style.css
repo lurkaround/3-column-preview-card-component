@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary: hsl(31, 77%, 52%);
+  --primary-second: hsl(184, 100%, 22%);
+  --primary-third: hsl(179, 100%, 13%);
+  --transparent: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+.main {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 5rem;
+}
+heading {
+  margin-top: 5%;
+  margin-bottom: -20px;
+}
+img {
+  margin-bottom: 4rem;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 5rem;
+}
+.section {
+  color: var(--light-gray);
+  height: 75vh;
+  width: 25vw;
+  border-radius: 7px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  width: 80%;
+  margin-left: 11%;
+}
+
+.section--1 {
+  background-color: var(--primary);
+}
+.section--2 {
+  background-color: var(--primary-second);
+}
+.section--3 {
+  background-color: var(--primary-third);
+}
+p {
+  max-width: 85%;
+  letter-spacing: 0.2rem;
+  line-height: 2.7rem;
+}
+button {
+  border-radius: 100px;
+  font-size: 15px;
+  max-width: 55%;
+  padding: 13px;
+  background-color: var(--light-gray);
+  border: none;
+  color: var(--primary);
+  outline: none;
+}
+button:hover {
+  transform: translateY(5px);
+  transition: ease-out 0.5s;
+  background-color: inherit;
+  color: var(--light-gray);
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1252px) {
+  .main {
+    flex-direction: column;
+  }
+  .section {
+    width: 350px;
+  }
+  .section div {
+    justify-content: space-around;
+    font-size: 12px;
+  }
+  button {
+    font-size: 15px;
+  }
+}
